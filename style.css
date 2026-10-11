@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #22223b;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #25234d;
+}
+
+.logo span {
+    color: #7357e8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #44445a;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #7357e8;
+}
+
+.nav-button,
+.primary-btn {
+    background-color: #7357e8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.nav-button:hover,
+.primary-btn:hover {
+    background-color: #5840c7;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Home section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 80px 7%;
+    background: linear-gradient(120deg, #f5f2ff, #eef5ff);
+    min-height: 530px;
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.small-heading {
+    color: #7357e8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #7357e8;
+}
+
+.hero-text {
+    color: #62627a;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    color: #7357e8;
+    border: 1px solid #7357e8;
+    padding: 11px 20px;
+    border-radius: 7px;
+}
+
+.secondary-btn:hover {
+    background-color: #eee9ff;
+}
+
+.note {
+    margin-top: 25px;
+    color: #77778b;
+    font-size: 14px;
+}
+
+/* Illustration made with simple CSS */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ddd5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.laptop {
+    background-color: white;
+    border-radius: 25px;
+    font-size: 85px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(60, 40, 130, 0.12);
+}
+
+.floating-card {
+    position: absolute;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.card-one {
+    top: 25px;
+    left: -20px;
+}
+
+.card-two {
+    right: -20px;
+    top: 110px;
+}
+
+.card-three {
+    bottom: 20px;
+    left: 35px;
+}
+
+/* Common section settings */
+.section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.section-heading h2,
+.join-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #69697e;
+}
+
+/* About section */
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #eeeeF5;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.info-card:hover,
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 40, 100, 0.09);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #69697e;
+    font-size: 14px;
+}
+
+/* Programs section */
+.programs {
+    background-color: #f8f7ff;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.program-card {
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #eeeeF5;
+    transition: 0.3s;
+}
+
+.program-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    font-size: 14px;
+    color: #69697e;
+    margin-bottom: 18px;
+}
+
+.program-card a {
+    color: #7357e8;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Call to action */
+.join-section {
+    text-align: center;
+    padding: 70px 7%;
+    background-color: #eeebff;
+}
+
+.join-section p:not(.small-heading) {
+    color: #69697e;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #24233f;
+    color: white;
+    padding: 40px 7% 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.footer-content p {
+    color: #c7c6d9;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #eeeeff;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #b8aaff;
+}
+
+.copyright {
+    border-top: 1px solid #484761;
+    text-align: center;
+    padding-top: 15px;
+    color: #c7c6d9;
+    font-size: 13px;
+}
+
+/* Mobile screen settings */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .laptop {
+        font-size: 60px;
+        padding: 25px;
+    }
+
+    .about-cards,
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .join-section h2 {
+        font-size: 27px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
